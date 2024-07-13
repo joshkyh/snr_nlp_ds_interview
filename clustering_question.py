@@ -17,7 +17,8 @@ def load_data() -> pd.DataFrame:
     print("Shape of the DataFrame: ", dfr.shape)
 
     # print len of embedding
-    print("Embedding vector is of length: ", len(dfr['embedding'][0]))
+    print("Embedding vector is of length: ", len(dfr['embedding'].iloc[0]))
+    dfr.head(10)
 
     return dfr
 

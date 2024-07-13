@@ -104,7 +104,10 @@ def plot_2D(dfr: pd.DataFrame) -> None:
     plt.ylabel('UMAP 2')
 
     # Show plot
-    plt.show()
+    #plt.show()
+    
+    # Export the plot to a png file
+    plt.savefig('clusters.png')
 
 
 if __name__=='__main__':
