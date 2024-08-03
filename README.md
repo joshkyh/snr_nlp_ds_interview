@@ -13,7 +13,7 @@ The aim of the interview is to assess the candidate's ability to
 
 Overall, these are the steps that the candidate should follow:
 1. Load the data (Done)
-2. Perform k-means
+2. Perform k-means, k=4.
 3. Check agreement between inferred clusters and ground truth (Done)
 4. Perform downprojection
 5. Visualize the clusters (Done)
