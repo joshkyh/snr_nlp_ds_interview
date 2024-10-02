@@ -1,0 +1,10 @@
+numpy==1.26.4
+pandas==2.2.2
+pip==24.0
+matplotlib==3.9.0
+pydantic==2.7.4
+pydantic-core==2.18.4
+python-dotenv==1.0.1
+requests==2.32.3
+tqdm==4.66.4
+umap-learn==0.5.6

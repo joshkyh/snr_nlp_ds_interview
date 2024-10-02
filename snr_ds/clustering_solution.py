@@ -12,7 +12,7 @@ def load_data() -> pd.DataFrame:
         pd.DataFrame: The filtered DataFrame containing only topics 1, 6, 11, and 16.
     """
     # Load the DataFrame from the pickle file
-    dfr = pd.read_pickle('sampled_df.pkl')
+    dfr = pd.read_pickle('snr_ds/sampled_df.pkl')
 
     # Keep only topics 1, 6, 11, and 16
     dfr = dfr[dfr['topic'].isin([1, 6, 11, 16])]
@@ -107,7 +107,7 @@ def plot_2D(dfr: pd.DataFrame) -> None:
     #plt.show()
     
     # Export the plot to a png file
-    plt.savefig('clusters.png')
+    plt.savefig('snr_ds/clusters.png')
 
 
 if __name__=='__main__':
