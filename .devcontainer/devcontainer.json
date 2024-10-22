@@ -1,0 +1,36 @@
+{
+    "name": "Dev Container - FSAI RAG",
+    "build": {
+      "dockerfile": "Dockerfile"
+    },
+    "workspaceMount": "source=${localWorkspaceFolder},target=/home/snr_nlp_ds_interview,type=bind",
+    "workspaceFolder": "/home/snr_nlp_ds_interview",
+    "runArgs": [
+        "-e", "PYTHONPATH=/home/snr_nlp_ds_interview"
+    ],
+    "customizations":  {
+        "vscode": {
+            "extensions": [
+                "ms-python.python",
+                "ms-vscode-remote.remote-wsl",
+                "GitHub.copilot",
+                "DavidAnson.vscode-markdownlint",
+                "eamodio.gitlens",
+                "ms-azuretools.vscode-docker",
+                "ms-python.vscode-pylance",
+                "ms-python.debugpy"
+            ],
+            "settings": {
+                "terminal.integrated.profiles.linux": {
+                    "bash": {
+                        "path": "/bin/bash"
+                    }
+                },
+                "terminal.integrated.defaultProfile.linux": "bash",
+                "extensions.verifySignature": false,
+                "explorer.compactFolders": false
+            }
+        }
+    },
+    "postCreateCommand": "pip install -r requirements.in; python -m principal_de.vectorize;"
+}
